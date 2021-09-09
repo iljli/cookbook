@@ -9,9 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </script>
+
     <link rel="stylesheet" href="style.css" type="text/css">
 
 
@@ -25,95 +31,94 @@
         <a class="navbar-brand" href="#">
             <img src="./resources/logo.jpg" alt="Cookbook Logo" height="30">
         </a>
-        <a class="navbar-brand" href="#">The real Cookbook</a>
+        <a class="navbar-brand" href="#">The amazing Cookbook</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Content 1</a>
-                <a class="nav-item nav-link" href="#">Content 2</a>
-                <a class="nav-item nav-link" href="#">Content 3</a>
+                <a class="nav-item nav-link" href="#">Content</a>
+                <a class="nav-item nav-link" href="#">Content</a>
             </div>
         </div>
     </nav>
 
     <!--------- Header-Body  --------->
-    <div class="container_header">
-        <div class="row">
-            <div class="col">
-                <h1 class="text-center font-weight-bold">The amazing Cookbook</p>
+    <div class="container_header" id="h1">
+        <div class="row bg-warning">
+            <div class="col pig">
+                <h1 class="text-center font-weight-bold ">The amazing Cookbook </h1>
             </div>
         </div>
     </div>
 
     <!--------- Main-Body  --------->
     <div class="container_mainbody bg-secondary">
-        <div class="row">
-            <div class="col-3">
-            </div>
+        <div class="row justify-content-center">
             <div class="col-6">
                 <div class="row">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        </ol>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="./resources/pexels-martin-lopez-1040685_1024.jpg"
-                                    alt="First slide">
+                                <img src="./resources/pexels-martin-lopez-1040685_1024.jpg" class="d-block w-100"
+                                    alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./resources/pexels-prince-photos-3054690_1024.jpg"
-                                    alt="Second slide">
+                                <img src="./resources/pexels-prince-photos-3054690_1024.jpg" class="d-block w-100"
+                                    alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./resources/pexels-rama-khandkar-2113556_1024.jpg"
-                                    alt="Third slide">
+                                <img src="./resources/pexels-rama-khandkar-2113556_1024.jpg" class="d-block w-100"
+                                    alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./resources/pexels-yente-van-eynde-2403392_1024.jpg"
-                                    alt="Fourth slide">
+                                <img src="./resources/pexels-yente-van-eynde-2403392_1024.jpg" class="d-block w-100"
+                                    alt="...">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
             </div>
         </div>
     </div>
 
     <!--------- Space-Body  --------->
     <div class="container_space">
-        <div style="height: 100px; background-color: lightgray;">
+        <div style="height: 100px; background-color: darkgrey;">
             <div class="row">
                 <div class="col">
-                    <h2 class="text-center">Here you can find ingenious stuff</p>
+                    <h2 class="text-center">Here's a selection of our best recipes!</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!--------- Recipes-Body  --------->
-    <div class="container_header d-flex justify-content-center">
+    <div class="container_header d-flex justify-content-center bg-secondary">
         <div class="row justify-content-center">
-            <div class="card" style="width: 18rem;">
+            <div class="card m-2 px-0 border-0" style="width: 18rem;">
                 <img class="card-img-top" src="./resources/pexels-dapurmelodi-1109197.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"> Garden-Fresh Corn Salad </h5>
@@ -124,20 +129,21 @@
                     <div class="input-group mb-3">
                         <div class="input-group">
                             <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseCard1"
-                                    role="button" aria-expanded="false" aria-controls="multiCollapseCard1">Ingredients</a>
+                                <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseCard1"
+                                    role="button" aria-expanded="false"
+                                    aria-controls="multiCollapseCard1">Ingredients</a>
                             </p>
                             <div class="row">
                                 <div class="col">
                                     <div class="collapse multi-collapse" id="multiCollapseCard1">
                                         <div class="card card-body">
                                             <ul class="list-unstyled text-start">
-                                                <li>Tasty ingredient A</li>
-                                                <li>Ganz langer Eintrag</li>
-                                                <li>Tasty ingredient C</li>
-                                                <li>Tasty ingredient D</li>
-                                                <li>Tasty ingredient E</li>
-                                                <li>Tasty ingredient F</li>
+                                                <li> 2 cans of corn </li>
+                                                <li>2 Avocados </li>
+                                                <li> 200gr feta</li>
+                                                <li>1 cucumber</li>
+                                                <li></li> 2 tomatos </li>
+                                                <li> 1 onion</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -148,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card m-2 px-0 border-0" style="width: 18rem;">
                 <img class="card-img-top" src="./resources/pexels-pixabay-327158.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Juicy Steakhouse Burgers </h5>
@@ -158,14 +164,23 @@
                     <div class="input-group mb-3">
                         <div class="input-group">
                             <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseCard2"
-                                    role="button" aria-expanded="false" aria-controls="multiCollapseCard2">Ingredients</a>
+                                <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseCard2"
+                                    role="button" aria-expanded="false"
+                                    aria-controls="multiCollapseCard2">Ingredients</a>
                             </p>
                             <div class="row">
                                 <div class="col">
                                     <div class="collapse multi-collapse" id="multiCollapseCard2">
                                         <div class="card card-body">
-                                           
+                                            <ul class="list-unstyled text-start">
+                                                <li> 1 steak </li>
+                                                <li>2 Tomatos </li>
+                                                <li> Burger Sause</li>
+                                                <li>1 Lettuce</li>
+                                                <li></li> 100gr Nachos </li>
+                                                <li> 1 onion</li>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -175,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card m-2 px-0 border-0" style="width: 18rem;">
                 <img class="card-img-top" src="./resources/pexels-taryn-elliott-4099124.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"> Vanilla Cupcakes</h5>
@@ -186,16 +201,22 @@
                     <div class="input-group mb-3">
                         <div class="input-group">
                             <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseCard3"
-                                    role="button" aria-expanded="false" aria-controls="multiCollapseCard3">Ingredients</a>
+                                <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseCard3"
+                                    role="button" aria-expanded="false"
+                                    aria-controls="multiCollapseCard3">Ingredients</a>
                             </p>
                             <div class="row">
                                 <div class="col">
                                     <div class="collapse multi-collapse" id="multiCollapseCard3">
                                         <div class="card card-body">
-                                            Some placeholder content for the first collapse component of this
-                                            multi-collapse example. This panel is
-                                            hidden by default but revealed when the user activates the relevant trigger.
+                                            <ul class="list-unstyled text-start">
+                                                <li> 2 cups flour </li>
+                                                <li> 1 vanila extract </li>
+                                                <li> Strawberry Icing</li>
+                                                <li> 200g chocolate chips</li>
+                                                <li></li> 200gr Cherries</li>
+                                                <li> 1 Backpulver </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -206,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
+            <div class="card m-2 px-0 border-0" style="width: 18rem;">
                 <img class="card-img-top" src="./resources/pexels-william-choquette-2641886.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"> Chicken and Vegetable Skewers with Lemon Rice </h5>
@@ -215,16 +236,22 @@
                     <div class="input-group mb-3">
                         <div class="input-group">
                             <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseCard4"
-                                    role="button" aria-expanded="false" aria-controls="multiCollapseCard4">Ingredients</a>
+                                <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseCard4"
+                                    role="button" aria-expanded="false"
+                                    aria-controls="multiCollapseCard4">Ingredients</a>
                             </p>
                             <div class="row">
                                 <div class="col">
                                     <div class="collapse multi-collapse" id="multiCollapseCard4">
                                         <div class="card card-body">
-                                            Some placeholder content for the first collapse component of this
-                                            multi-collapse example. This panel is
-                                            hidden by default but revealed when the user activates the relevant trigger.
+                                            <ul class="list-unstyled text-start">
+                                                <li> 500kg chicken breasts </li>
+                                                <li> 1 lemon </li>
+                                                <li> 300gr Jasmine Reis </li>
+                                                <li> 2 zuccini</li>
+                                                <li></li> 200gr mushrooms </li>
+                                                <li> 1 onion</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -254,15 +281,15 @@
 
 
 
-<!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
@@ -270,3 +297,8 @@
 </body>
 
 </html>
+
+<!-- ./resources/pexels-martin-lopez-1040685_1024.jpg
+./resources/pexels-prince-photos-3054690_1024.jpg
+./resources/pexels-rama-khandkar-2113556_1024.jpg
+./resources/pexels-yente-van-eynde-2403392_1024.jpg -->
